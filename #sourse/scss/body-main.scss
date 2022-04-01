@@ -16,3 +16,7 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+@mixin fs-lh($fs,$lh) {
+	font-size: $fs;
+	line-height: $lh;
+}
