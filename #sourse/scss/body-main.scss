@@ -20,3 +20,18 @@ body {
 	font-size: $fs;
 	line-height: $lh;
 }
+@mixin hover-button {
+	transition: all 0.3s;
+	background: #ec7979;
+}
+@mixin active-button {
+	transition: all 0.3s;
+	background: #ab4949;
+}
+@mixin text-style ($f-f,$f-w,$f-s,$l-h,$color) {
+	font-family: $f-f;
+	font-weight: $f-w;
+	font-size: $f-s;
+	line-height: $l-h;
+	color: $color;
+}

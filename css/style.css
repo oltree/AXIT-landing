@@ -179,6 +179,12 @@ body {
           justify-content: space-between;
 }
 
+.header__logo-pic {
+  position: relative;
+  left: -55px;
+  z-index: 5;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,31 +193,23 @@ body {
 
 .header__link {
   padding: 28px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 19px;
   font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #fff;
 }
-
 .header__link:hover {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #ec7979;
 }
-
 .header__link:active {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   background: #ab4949;
-}
-
-.header__logo-pic {
-  position: relative;
-  left: -55px;
-  z-index: 2;
 }
 
 .close-icon-menu,
@@ -353,9 +351,9 @@ body {
   }
 }
 .banner {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(/img/bg.jpg) no-repeat center;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/bg.jpg) no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/bg.jpg) no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../img/bg.jpg) no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/bg.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -1581,9 +1579,9 @@ body {
 }
 
 .design__image {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(/img/banner.jpg) no-repeat center;
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/banner.jpg) no-repeat center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/banner.jpg) no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(../img/banner.jpg) no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/banner.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/banner.jpg) no-repeat center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -11,29 +11,23 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.header__logo-pic{
+	position: relative;
+	left: -55px;
+	z-index: 5;
+}
 .header__list {
 	display: flex;
 }
 .header__link {
 	padding: 28px;
-	color: #fff;
-	font-size: 14px;
-	font-weight: 600;
-	line-height: 19px;
-	font-family: 'Open Sans';
-}
-.header__link:hover{
-	transition: all 0.3s;
-	background: #ec7979;
-}
-.header__link:active{
-	transition: all 0.3s;
-	background: #ab4949;
-}
-.header__logo-pic{
-	position: relative;
-	left: -55px;
-	z-index: 2;
+	@include text-style('Open Sans',600,14px,19px,#fff);
+	&:hover{
+		@include hover-button;
+	}
+	&:active{
+		@include active-button;
+	}
 }
 .close-icon-menu,
 .icon-menu {
