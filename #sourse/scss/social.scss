@@ -8,16 +8,14 @@
 	justify-content: space-between;
 }
 .social__body {
-	max-width: 470px;
+	flex: 1 1 40%;
 	margin: 0 30px 0 0;
 }
 .social__title {
 	padding: 13.5px 0;
 	margin: 0 0 18px 0;
-	font-size: 24px;
-	line-height: 33px;
-	font-weight: 700;
-	font-family: 'Open Sans';
+	font-family: $open-sans;
+	@include text-style(700, 24px, 33px);
 	text-transform: capitalize;
 }
 .social__text {
@@ -26,74 +24,73 @@
 	line-height: 21px;
 }
 .social__icons {
+	flex: 1 1 60%;
 	gap: 30px;
 }
-.icons{
+.icons {
 	display: flex;
 }
 .icons__icon {
 	max-width: 100%;
 }
-@media (max-width: 1024px){
-	.social__body{
+@media (max-width: 1024px) {
+	.social__body {
 		max-width: 402px;
 		margin: 0 20px 0 0;
 	}
-	.social__title{
+	.social__title {
 		padding: 10px 0;
 		margin: 0 0 13px 0;
-		font-size: 18px;
-		line-height: 25px;
+		@include fs-lh(18px, 25px);
 	}
-	.social__text{
+	.social__text {
 		margin: 0 0 13px 0;
-		font-size: 14px;
-		line-height: 16px;
+		@include fs-lh(14px, 16px);
 	}
-	.social__icons{
+	.social__icons {
 		gap: 20px;
 	}
-	.icons__icon{
+	.icons__icon {
 		height: 64px;
 	}
 }
-@media (max-width: 768px){
-	.social{
+@media (max-width: 768px) {
+	.social {
 		margin: 0 0 60px 0;
 	}
-	.social__content{
+	.social__content {
 		flex-direction: column;
 	}
-	.social__body{
+	.social__body {
 		max-width: 100%;
 		padding: 31px 0 0 0;
 		text-align: center;
 	}
-	.social__text{
+	.social__text {
 		margin: 0 0 32px 0;
 	}
-	.social__icons{
+	.social__icons {
 		margin: 0 0 44px 0;
 	}
-	.icons__icon{
-		height: 48px;
+	.icons__icon {
+		height: 56px;
 	}
 }
-@media (max-width: 320px){
-	.social{
+@media (max-width: 320px) {
+	.social {
 		margin: 0 0 41px 0;
 	}
-	.social__title{
+	.social__title {
 		padding: 31px 0 0 0;
 	}
-	.social__text{
+	.social__text {
 		margin: 0 0 32px 0;
 	}
-	.social__icons{
+	.social__icons {
 		gap: 17px;
 		margin: 0 0 44px 0;
 	}
-	.icons__icon{
+	.icons__icon {
 		height: 26px;
 	}
 }

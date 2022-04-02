@@ -755,17 +755,19 @@ body {
 }
 
 .social__body {
-  max-width: 470px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
   margin: 0 30px 0 0;
 }
 
 .social__title {
   padding: 13.5px 0;
   margin: 0 0 18px 0;
+  font-family: "Open Sans";
+  font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-  font-weight: 700;
-  font-family: "Open Sans";
   text-transform: capitalize;
 }
 
@@ -776,6 +778,9 @@ body {
 }
 
 .social__icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
   gap: 30px;
 }
 
@@ -843,7 +848,7 @@ body {
   }
 
   .icons__icon {
-    height: 48px;
+    height: 56px;
   }
 }
 @media (max-width: 320px) {
