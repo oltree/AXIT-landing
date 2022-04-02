@@ -16,22 +16,39 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-@mixin fs-lh($fs,$lh) {
-	font-size: $fs;
-	line-height: $lh;
-}
-@mixin hover-button {
+//variables
+$transition: all 0.3s;
+$color-black: #000;
+$color-white: #fff;
+$color-darker: #ab4949;
+$color-lighter: #ec7979;
+$raleway: "Raleway";
+$open-sans: "Open Sans";
+//header mixins
+@mixin head-btn-hover {
 	transition: all 0.3s;
 	background: #ec7979;
 }
-@mixin active-button {
+@mixin head-btn-active {
 	transition: all 0.3s;
 	background: #ab4949;
 }
-@mixin text-style ($f-f,$f-w,$f-s,$l-h,$color) {
-	font-family: $f-f;
+//main mixins
+@mixin main-btn-hover {
+	transition: all 0.3s;
+	background: #ab4949;
+}
+@mixin main-btn-active {
+	transition: all 0.3s;
+	background: #ec7979;
+}
+//mixins for style text
+@mixin fs-lh($fs, $lh) {
+	font-size: $fs;
+	line-height: $lh;
+}
+@mixin text-style($f-w, $f-s, $l-h) {
 	font-weight: $f-w;
 	font-size: $f-s;
 	line-height: $l-h;
-	color: $color;
 }
