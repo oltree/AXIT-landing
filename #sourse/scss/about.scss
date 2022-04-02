@@ -1,4 +1,4 @@
-.about{
+.about {
 	margin: 0 0 60px 0;
 	position: relative;
 }
@@ -8,28 +8,27 @@
 }
 .block-text__title {
 	padding: 53.5px 0;
-	font-size: 36px;
-	line-height: 42px;
+	@include fs-lh(36px, 42px);
 	text-transform: uppercase;
 }
-.title-white{
-	color: #fff;
+.title-white {
+	color: $color-white;
 }
-.block-text__bottom{
+.block-text__bottom {
 	width: 170px;
 	height: 1px;
 	margin: 0 auto 40px;
-	background: #ec7979;
+	background: $color-lighter;
 }
-.bottom-white{
-	background: #fff;
+.bottom-white {
+	background: $color-white;
 }
 .block-text__text {
-	line-height: 21px;
 	color: #86878b;
+	@include fs-lh(18px, 21px);
 }
-.text-white{
-	color: #fff;
+.text-white {
+	color: $color-white;
 }
 //end block-title repeat
 .about__block-text {
@@ -41,7 +40,7 @@
 	height: 100%;
 }
 .about__column {
-	flex: 1 1 calc(100%/3);
+	flex: 1 1 calc(100% / 3);
 	text-align: center;
 }
 .about__icon {
@@ -51,12 +50,10 @@
 .about__title {
 	padding: 33.5px 0;
 	margin: 0 0 8px 0;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 33px;
+	@include text-style(700, 24px, 33px);
 }
 .about__text {
-	line-height: 21px;
+	@include fs-lh(18px, 21px);
 }
 @media (max-width: 1024px) {
 	.about__block-text {
@@ -64,16 +61,14 @@
 	}
 	.block-text__title {
 		padding: 45.5px 0;
-		font-size: 24px;
-		line-height: 28px;
+		@include fs-lh(24px, 28px);
 	}
-	.block-text__bottom{
+	.block-text__bottom {
 		width: 142px;
 		margin: 0 auto 32px;
 	}
 	.block-text__text {
-		font-size: 14px;
-		line-height: 16px;
+		@include fs-lh(14px, 16px);
 	}
 	.about__columns {
 		gap: 20px;
@@ -83,13 +78,11 @@
 	}
 	.about__title {
 		padding: 28.5px 0;
-		margin:0 0 17px 0;
-		font-size: 18px;
-		line-height: 25px;
+		margin: 0 0 17px 0;
+		@include fs-lh(18px, 25px);
 	}
 	.about__text {
-		font-size: 14px;
-		line-height: 16px;
+		@include fs-lh(14px, 16px);
 	}
 }
 @media (max-width: 767.68px) {
@@ -103,16 +96,14 @@
 	}
 	.block-text__title {
 		padding: 49px 0;
-		font-size: 18px;
-		line-height: 21px;
+		@include fs-lh(18px, 21px);
 	}
-	.block-text__bottom{
+	.block-text__bottom {
 		width: 134px;
 		margin: 0 auto 25px;
 	}
 	.block-text__text {
-		font-size: 13px;
-		line-height: 15px;
+		@include fs-lh(13px, 15px);
 	}
 	.about__columns {
 		gap: 10px;
