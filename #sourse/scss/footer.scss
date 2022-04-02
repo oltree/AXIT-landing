@@ -1,6 +1,6 @@
 .footer {
 	width: 100%;
-	background: #000;
+	background: $color-black;
 }
 .footer__content {
 	padding: 35px 0 27px;
@@ -10,7 +10,7 @@
 	margin: 0 0 28px 0;
 	justify-content: center;
 }
-.icons__icon-footer{
+.icons__icon-footer {
 	max-width: 53.2px;
 }
 .footer__text {
@@ -23,12 +23,11 @@
 		gap: 27px;
 		margin: 0 0 38px 0;
 	}
-	.icons__icon-footer{
+	.icons__icon-footer {
 		max-width: 45px;
 	}
 	.footer__text {
-		font-size: 14px;
-		line-height: 16px;
+		@include fs-lh(14px, 16px);
 	}
 }
 @media (max-width: 767.98px) {
@@ -40,7 +39,7 @@
 	.footer__icons {
 		gap: 17px;
 	}
-	.icons__icon-footer{
+	.icons__icon-footer {
 		max-width: 26px;
 	}
 	.footer__text {

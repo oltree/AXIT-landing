@@ -40,14 +40,10 @@
 	@include text-style(600, 18px, 25px);
 	border: 2px solid $color-white;
 	&:hover {
-		color: $color-lighter;
-		border: 2px solid $color-lighter;
-		transition: $transition;
+		@include clean-btn-hover;
 	}
 	&:active {
-		background: $color-darker;
-		border: 2px solid $color-darker;
-		transition: $transition;
+		@include clean-btn-active;
 	}
 }
 .banner__form {

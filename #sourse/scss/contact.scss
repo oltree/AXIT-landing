@@ -10,7 +10,7 @@
 }
 .contact__field {
    display: flex;
-	flex-direction: column;
+   flex-direction: column;
    flex: 1 1 50%;
    gap: 50px;
    margin: 0 0 50px 0;
@@ -19,19 +19,17 @@
    width: 100%;
    padding: 0 0 16px 0;
    border: 0;
-	border-bottom: 1px solid #bdbdbd;
-	font-size: 14px;
-	line-height: 19px;
-	font-family: 'Open Sans';
+   border-bottom: 1px solid #bdbdbd;
+   font-family: $open-sans;
+   @include fs-lh(14px, 19px);
 }
 .contact__comment {
    width: 100%;
    padding: 0 0 17px 0;
    border: 0;
-	border-bottom: 1px solid #bdbdbd;
-	font-size: 14px;
-	line-height: 19px;
-	font-family: 'Open Sans';
+   border-bottom: 1px solid #bdbdbd;
+   font-family: $open-sans;
+   @include fs-lh(14px, 19px);
    resize: none;
 }
 .contact__submit {
@@ -39,18 +37,18 @@
    width: 370px;
    margin: 0 auto;
    padding: 16.5px 0;
-   font-family: 'Open Sans';
-   color: #fff;
-   font-weight: 600;
-   line-height: 25px;
-   background: #ec7979;
+   color: $color-white;
+   font-family: $open-sans;
+   @include text-style(600, 18px, 25px);
+   background: $color-lighter;
    text-transform: capitalize;
-}
-.contact__submit:hover{
-   background: #ab4949;
-}
-.contact__submit:active{
-   box-shadow: inset 0 0 10px #ab4949;
+   &:hover {
+      @include main-btn-hover;
+   }
+   &:active {
+      @include main-btn-active;
+      box-shadow: inset 0 0 10px $color-lighter;
+   }
 }
 @media (max-width: 1024px) {
    .contact__block-text {
@@ -75,6 +73,3 @@
       padding: 12.5px 0;
    }
 }
-
-
-
