@@ -43,9 +43,9 @@ $open-sans: "Open Sans";
 	background: #ec7979;
 }
 //mixins for style text
-@mixin fs-lh($fs, $lh) {
-	font-size: $fs;
-	line-height: $lh;
+@mixin fs-lh($f-s, $l-h) {
+	font-size: $f-s;
+	line-height: $l-h;
 }
 @mixin text-style($f-w, $f-s, $l-h) {
 	font-weight: $f-w;

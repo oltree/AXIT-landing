@@ -383,8 +383,8 @@ body {
 
 .banner__title {
   margin: 0 0 55px 0;
-  font-size: 48px;
   font-weight: 500;
+  font-size: 48px;
   line-height: 56px;
   text-transform: uppercase;
 }
@@ -399,6 +399,8 @@ body {
 .banner__text {
   max-width: 270px;
   margin: 0 0 42px 0;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 21px;
 }
 
@@ -406,9 +408,10 @@ body {
   display: inline-block;
   padding: 14.5px 89px;
   color: #fff;
-  font-weight: 600;
-  line-height: 25px;
   font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
   border: 2px solid #fff;
 }
 
@@ -442,10 +445,10 @@ body {
   margin: 0 0 45px 0;
   text-align: center;
   color: #333;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33px;
   font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
   text-transform: uppercase;
 }
 
@@ -469,9 +472,10 @@ body {
   padding: 0 0 16px 0;
   border: 0;
   border-bottom: 1px solid #bdbdbd;
+  font-family: "Open Sans";
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  font-family: "Open Sans";
 }
 
 .banner__field::-webkit-input-placeholder {
@@ -499,28 +503,28 @@ body {
   padding: 20px 0;
   margin: 42px 0 0 0;
   color: #fff;
-  font-size: 15px;
+  font-family: "Open Sans";
   font-weight: 600;
+  font-size: 15px;
   line-height: 20px;
   background: #ec7979;
-  font-family: "Open Sans";
   border-radius: 0 0 9px 9px;
 }
 
 .banner__submit:hover {
-  background: #ab4949;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  background: #ab4949;
 }
 
 .banner__submit:active {
-  background: #ec7979;
-  -webkit-box-shadow: inset 0 0 10px #ab4949;
-          box-shadow: inset 0 0 10px #ab4949;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  background: #ec7979;
+  -webkit-box-shadow: inset 0 0 10px #ab4949;
+          box-shadow: inset 0 0 10px #ab4949;
 }
 
 @media (max-width: 1024px) {
@@ -540,8 +544,8 @@ body {
 
   .banner__title {
     margin: 0 0 42px 0;
-    font-size: 36px;
     font-weight: 500;
+    font-size: 36px;
     line-height: 42px;
   }
 
