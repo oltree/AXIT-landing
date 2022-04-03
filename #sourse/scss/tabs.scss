@@ -42,13 +42,9 @@
 //end setting for TABS
 .tabs__cards {
 	display: flex;
-	overflow: hidden;
-}
-.tabs__card {
-	flex: 0 0 100%;
 }
 .tabs__body {
-	width: 60%;
+	flex: 0 0 60%;
 	overflow: auto;
 	padding: 0 30px 0 100px;
 }
@@ -79,22 +75,18 @@
 	}
 }
 .tabs__image {
-	position: relative;
 	flex: 0 0 40%;
-	transform: translate(-100%, 0);
 }
 .tabs__image img {
 	max-width: 100%;
-	position: absolute;
 	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
 	object-fit: cover;
 }
 @media (max-width: 1024px) {
+	.tabs__nav > label {
+		padding: 9.5px 50px;
+	}
 	.tabs__body {
-		max-height: 385px;
 		padding: 0 25px 0 85px;
 	}
 	.tabs__title {
@@ -111,29 +103,25 @@
 		padding: 16.5px 71.5px;
 	}
 }
-@media (max-width: 1023.98px) {
+@media (max-width: 992px) {
 	.tabs__body {
 		padding: 0 25px 0 40px;
 	}
 	.tabs__title {
-		margin: 0;
+		margin: 0 0 30px 0;
 	}
 	.tabs__text {
-		margin: 0 0 20px 0;
+		margin: 0 0 50px 0;
 	}
 	.tabs__button {
-		margin: 0 0 20px 0;
+		margin: 0 0 30px 0;
 	}
 }
 @media (max-width: 768px) {
-	.tabs__nav > label {
-		padding: 9.5px 50px;
-	}
 	.tabs {
 		margin: 0 0 30px 0;
 	}
 	.tabs__body {
-		max-height: 332px;
 		padding: 0 25px 0 40px;
 	}
 	.tabs__title {
@@ -153,8 +141,7 @@
 		padding: 9.5px 28px;
 	}
 	.tabs__body {
-		width: 100%;
-		max-height: 100%;
+		flex: 0 0 100%;
 		padding: 0 15px;
 		text-align: center;
 	}
@@ -163,8 +150,7 @@
 		margin: 0 0 10px 0;
 	}
 	.tabs__text {
-		max-width: 600px;
-		margin: 0 auto 29px;
+		margin: 0 0 29px 0;
 	}
 	.tabs__button {
 		margin: 0 0 30px 0;
