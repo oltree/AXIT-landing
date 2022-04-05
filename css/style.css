@@ -103,7 +103,6 @@ input,
 button,
 textarea {
   font-family: inherit;
-  -webkit-appearance: none;
 }
 
 input::-ms-clear {
@@ -422,6 +421,7 @@ body {
 }
 
 .banner__link {
+  -webkit-appearance: none;
   display: inline-block;
   padding: 14.5px 89px;
   color: #fff;

@@ -33,6 +33,7 @@
 	@include text-style(400, 18px, 21px);
 }
 .banner__link {
+	-webkit-appearance: none;
 	display: inline-block;
 	padding: 14.5px 89px;
 	color: $color-white;
