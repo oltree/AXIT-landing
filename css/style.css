@@ -624,8 +624,8 @@ body {
 
   .banner__body {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 30%;
-            flex: 1 1 30%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
     padding: 0 20px 0;
   }
 
@@ -683,7 +683,7 @@ body {
   }
 
   .banner__subtitle {
-    padding: 28.5px 0;
+    padding: 28.5px 5px;
     margin: 0 0 45px 0;
   }
 
@@ -698,11 +698,16 @@ body {
 }
 @media (max-width: 479.98px) {
   .banner__form {
-    width: 300px;
+    width: 100%;
   }
 
   .banner__field {
-    width: 250px;
+    width: 280px;
+  }
+}
+@media (max-width: 383px) {
+  .banner__subtitle {
+    margin: 0;
   }
 }
 @media (max-width: 320px) {
@@ -1439,7 +1444,6 @@ body {
   background: #e2e2e2;
   border-radius: 10px;
 }
-
 .reviews__comment:after {
   content: "";
   position: absolute;
@@ -1545,6 +1549,7 @@ body {
   }
 
   .reviews__column {
+    padding: 0 10px;
     margin: 0 0 23px 0;
   }
   .reviews__column:hover .reviews__comment:after {
