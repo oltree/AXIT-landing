@@ -928,9 +928,6 @@ body {
   background-color: #fff;
   text-transform: uppercase;
   border-radius: 5px 5px 0 0;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
   position: relative;
   top: 1px;
 }
@@ -1327,6 +1324,7 @@ body {
 .pricing__item:first-child {
   background: #333;
   color: #fff;
+  text-transform: none;
   font-family: "Open Sans";
   font-weight: 700;
   font-size: 24px;
@@ -1336,12 +1334,14 @@ body {
   padding: 28px 0;
   background: #333;
   color: #fff;
+  text-transform: none;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
 }
 .pricing__item:nth-child(3) {
   background: #333;
+  text-transform: none;
 }
 
 @media (max-width: 1024px) {

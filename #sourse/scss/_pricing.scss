@@ -31,6 +31,7 @@
 	&:first-child {
 		background: #333;
 		color: $color-white;
+		text-transform: none;
 		font-family: $open-sans;
 		@include text-style(700, 24px, 31px);
 	}
@@ -38,10 +39,12 @@
 		padding: 28px 0;
 		background: #333;
 		color: $color-white;
+		text-transform: none;
 		@include text-style(700, 36px, 42px);
 	}
 	&:nth-child(3) {
 		background: #333;
+		text-transform: none;
 	}
 }
 @media (max-width: 1024px) {
