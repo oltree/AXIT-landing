@@ -4,7 +4,7 @@ $(document).ready(function() {
       $('body').toggleClass('lock');
    });
 });
-$(document).ready(function(){
+function slickify(){
    $('.reviews__columns').slick({
       accessibility: true,
       arrows: false,
@@ -20,4 +20,11 @@ $(document).ready(function(){
          settings: 'unslick'
       }]
    });
+}
+slickify();
+$(window).resize(function(){
+	var $windowWidth = $(window).width();
+	if ($windowWidth <= 768) {
+		slickify();
+	}
 });

@@ -1502,10 +1502,6 @@ body {
     margin: 0 0 57px 0;
   }
 
-  .reviews__column {
-    width: 317px;
-  }
-
   .reviews__comment {
     padding: 50px 15px;
   }
@@ -1538,11 +1534,6 @@ body {
     line-height: 16px;
   }
 }
-@media (width: 768px) {
-  .reviews__column {
-    padding: 0 100px;
-  }
-}
 @media (max-width: 768px) {
   .reviews__columns {
     display: block;
@@ -1550,7 +1541,6 @@ body {
   }
 
   .reviews__column {
-    padding: 0 10px;
     margin: 0 0 23px 0;
   }
   .reviews__column:hover .reviews__comment:after {

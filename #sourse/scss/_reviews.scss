@@ -71,9 +71,6 @@
 		gap: 20px;
 		margin: 0 0 57px 0;
 	}
-	.reviews__column {
-		width: 317px;
-	}
 	.reviews__comment {
 		padding: 50px 15px;
 		&:after {
@@ -99,18 +96,12 @@
 		@include fs-lh(14px, 16px);
 	}
 }
-@media (width: 768px) {
-	.reviews__column {
-		padding: 0 100px;
-	}
-}
 @media (max-width: 768px) {
 	.reviews__columns {
 		display: block;
 		margin: 0 0 32px 0;
 	}
 	.reviews__column {
-		padding: 0 10px;
 		margin: 0 0 23px 0;
 		&:hover {
 			.reviews__comment:after {
