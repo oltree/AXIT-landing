@@ -1,10 +1,12 @@
+.reviews__content {
+	margin: 0 0 64px 0;
+}
 .reviews__block-text {
 	margin: 0 0 83px 0;
 }
 .reviews__columns {
 	display: flex;
 	gap: 30px;
-	margin: 0 0 64px 0;
 }
 .reviews__column {
 	flex: 1 1 calc(100% / 3);
@@ -53,12 +55,14 @@
 	line-height: 21px;
 }
 @media (max-width: 1024px) {
+	.reviews__content {
+		margin: 0 0 57px 0;
+	}
 	.reviews__block-text {
 		margin: 0 0 32px 0;
 	}
 	.reviews__columns {
 		gap: 20px;
-		margin: 0 0 57px 0;
 	}
 	.reviews__comment {
 		padding: 50px 15px;
@@ -86,9 +90,11 @@
 	}
 }
 @media (max-width: 768px) {
+	.reviews__content {
+		margin: 0 0 32px 0;
+	}
 	.reviews__columns {
 		display: block;
-		margin: 0 0 32px 0;
 	}
 	.reviews__column {
 		margin: 0 0 23px 0;
