@@ -5,12 +5,10 @@
 .tabs__nav > input[type="radio"] {
 	display: none;
 }
-//скрыть контент по умолчанию
 .tabs__nav > div {
 	display: none;
 	border: 1px solid #c6cbcd;
 }
-//отобразить контент, связанный с вабранной радиокнопкой (input type="radio")
 #tab-btn-1:checked ~ #tab-1,
 #tab-btn-2:checked ~ #tab-2,
 #tab-btn-3:checked ~ #tab-3 {
