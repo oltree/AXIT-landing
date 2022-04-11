@@ -122,9 +122,7 @@
 		display: flex;
 	}
 	.slick-dots {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include flexbox;
 	}
 	.slick-dots li {
 		list-style: none;

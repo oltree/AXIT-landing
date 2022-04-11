@@ -62,3 +62,9 @@ $open-sans: "Open Sans";
 	font-size: $f-s;
 	line-height: $l-h;
 }
+//flex mixin
+@mixin flexbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
