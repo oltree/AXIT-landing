@@ -45,9 +45,10 @@
 						<form class="banner__form">
 							<h2 class="banner__subtitle">Try Your <span>FREE</span> Trial Today</h2>
 							<div class="banner__fields">
-								<input name="user-name" type="text" class="banner__field" placeholder="Name">
-								<input name="user-mail" type="email" class="banner__field" placeholder="Email">
-								<input name="user-password" type="password" class="banner__field" placeholder="Password">
+								<input name="user-name" type="text" class="banner__field" placeholder="Name" required>
+								<input name="user-mail" type="email" class="banner__field" placeholder="Email" required>
+								<input name="user-password" type="password" class="banner__field" placeholder="Password"
+									minlength="8" maxlength="12" size="12" required>
 							</div>
 							<button type="submit" class="banner__submit">Get Started</button>
 						</form>
@@ -334,9 +335,10 @@
 						<form class="contact__form">
 							<div class="contact__fields">
 								<div class="contact__field">
-									<input name="user-name" type="text" class="contact__item" placeholder="Name">
-									<input name="user-mail" type="email" class="contact__item" placeholder="Email">
-									<input name="user-password" type="password" class="contact__item" placeholder="Password">
+									<input name="user-name" type="text" class="contact__item" placeholder="Name" required>
+									<input name="user-mail" type="email" class="contact__item" placeholder="Email" required>
+									<input name="user-password" type="password" class="contact__item" placeholder="Password"
+										minlength="8" maxlength="12" size="12" required>
 								</div>
 								<div class="contact__field">
 									<textarea name="user-comment" rows="10" cols="500" class="contact__comment"
