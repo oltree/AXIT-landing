@@ -9,17 +9,6 @@
 .reviews__column {
 	flex: 1 1 calc(100% / 3);
 }
-.reviews__column:hover {
-	.reviews__comment:after {
-		content: "";
-		left: 50px;
-		transition: $transition;
-	}
-	.reviews__user {
-		transform: translateY(-65px);
-		transition: $transition;
-	}
-}
 .reviews__comment {
 	position: relative;
 	padding: 38px 15px;
@@ -103,17 +92,6 @@
 	}
 	.reviews__column {
 		margin: 0 0 23px 0;
-		&:hover {
-			.reviews__comment:after {
-				content: "";
-				left: 20px;
-				transition: none;
-			}
-			.reviews__user {
-				transform: none;
-				transition: none;
-			}
-		}
 	}
 	.reviews__comment {
 		margin: 0 0 40px 0;
