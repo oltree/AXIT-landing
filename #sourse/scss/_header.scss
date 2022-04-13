@@ -1,55 +1,59 @@
 .header {
 	position: fixed;
+	height: 75px;
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 5;
-}
-.header::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	background: $color-black;
-}
-.header__content {
-	position: relative;
-	height: 75px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.header__logo {
-	position: relative;
-	z-index: 3;
-	flex: 0 0 184px;
-}
-.header__logo-pic {
-	max-width: 100%;
-	position: relative;
-	left: -55px;
-}
-.header__burger {
-	display: none;
-}
-.header__list {
-	display: flex;
-	position: relative;
-	z-index: 2;
-}
-.header__link {
-	padding: 28px;
-	color: $color-white;
-	font-family: $open-sans;
-	@include text-style(600, 14px, 19px);
-	&:hover {
-		@include head-btn-hover;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background: $color-black;
 	}
-	&:active {
-		@include head-btn-active;
+	&__content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		position: relative;
+		z-index: 3;
+		flex: 0 0 184px;
+	}
+	&__logo-pic {
+		max-width: 100%;
+		position: relative;
+		left: -55px;
+	}
+	&__burger {
+		display: none;
+	}
+	&__menu {
+	}
+	&__list {
+		display: flex;
+		position: relative;
+		z-index: 2;
+	}
+	&__item {
+	}
+	&__link {
+		padding: 28px;
+		color: $color-white;
+		font-family: $open-sans;
+		@include text-style(600, 14px, 19px);
+		&:hover {
+			@include head-btn-hover;
+		}
+		&:active {
+			@include head-btn-active;
+		}
 	}
 }
 @media (max-width: 1300px) {
@@ -57,82 +61,82 @@
 		left: 0;
 	}
 }
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 	body.lock {
 		overflow: hidden;
 	}
-	.header__content {
+	.header {
 		height: 56px;
-	}
-	.header__logo {
-		flex: 0 0 137px;
-	}
-	.header__burger {
-		display: block;
-		width: 24px;
-		height: 18px;
-		position: relative;
-		z-index: 3;
-	}
-	.header__burger span {
-		position: absolute;
-		left: 0;
-		top: 7.5px;
-		width: 100%;
-		height: 3px;
-		background: $color-white;
-		transition: $transition;
-	}
-	.header__burger::before,
-	.header__burger::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 3px;
-		left: 0;
-		background: $color-white;
-		transition: $transition;
-	}
-	.header__burger::before {
-		top: 0;
-	}
-	.header__burger::after {
-		bottom: 0;
-	}
-	.header__burger.active span {
-		transform: scale(0);
-	}
-	.header__burger.active::before {
-		transform: rotate(45deg);
-		top: 7px;
-	}
-	.header__burger.active::after {
-		transform: rotate(-45deg);
-		bottom: 7px;
-	}
-	.header__menu {
-		padding: 60px 0 0 0;
-		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background: $color-black;
-		transition: $transition;
-	}
-	.header__menu.active {
-		left: 0;
-		transition: $transition;
-	}
-	.header__list {
-		display: block;
-		text-align: center;
-	}
-	.header__item {
-		padding: 24px;
-	}
-	.header__link {
-		padding: 24px 110px;
+		&__logo {
+			flex: 0 0 137px;
+		}
+		&__burger {
+			display: block;
+			width: 24px;
+			height: 18px;
+			position: relative;
+			z-index: 3;
+			span {
+				position: absolute;
+				left: 0;
+				top: 7.4px;
+				width: 100%;
+				height: 3px;
+				background: $color-white;
+				transition: $transition;
+			}
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 3px;
+				left: 0;
+				background: $color-white;
+				transition: $transition;
+			}
+			&::before {
+				top: 0;
+			}
+			&::after {
+				bottom: 0;
+			}
+			&.active span {
+				transform: scale(0);
+			}
+			&.active::before {
+				transform: rotate(45deg);
+				top: 7px;
+			}
+			&.active::after {
+				transform: rotate(-45deg);
+				bottom: 8px;
+			}
+		}
+		&__menu {
+			padding: 60px 0 0 0;
+			position: fixed;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background: $color-black;
+			transition: $transition;
+			&.active {
+				left: 0;
+				transition: $transition;
+			}
+		}
+		&__list {
+			display: block;
+			text-align: center;
+		}
+		&__item {
+			padding: 24px;
+		}
+		&__link {
+			padding: 24px 110px;
+		}
 	}
 }

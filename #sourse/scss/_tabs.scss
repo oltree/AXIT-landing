@@ -1,172 +1,147 @@
-//start setting for TABS
 .tabs {
-	margin: 0 0 50px 0;
-}
-.tabs__nav > input[type="radio"] {
-	display: none;
-}
-.tabs__nav > div {
-	display: none;
-	border: 1px solid #c6cbcd;
-}
-#tab-btn-1:checked ~ #tab-1,
-#tab-btn-2:checked ~ #tab-2,
-#tab-btn-3:checked ~ #tab-3 {
-	display: block;
-}
-.tabs__nav > label {
-	display: inline-block;
-	padding: 9.5px 82px;
-	cursor: pointer;
-	color: #333;
-	text-align: center;
-	vertical-align: middle;
-	font-family: $open-sans;
-	@include fs-lh(14px, 19px);
-	background-color: $color-white;
-	text-transform: uppercase;
-	border-radius: 5px 5px 0 0;
-	position: relative;
-	top: 1px;
-}
-.tabs > label:not(:first-of-type) {
-	border-left: none;
-}
-.tabs__nav > input[type="radio"]:checked + label {
-	border: 1px solid #c6cbcd;
-	border-bottom: 1px solid $color-white;
-}
-//end setting for TABS
-.tabs__cards {
-	display: flex;
-}
-.tabs__body {
-	flex: 0 0 60%;
-	overflow: auto;
-	padding: 0 30px 0 100px;
-}
-.tabs__title {
-	padding: 41.5px 0;
-	margin: 0 0 27px 0;
-	font-family: $open-sans;
-	@include text-style(700, 30px, 41px);
-}
-.tabs__text {
-	margin: 0 0 27px 0;
-	line-height: 21px;
-}
-.tabs__button {
-	display: inline-block;
-	padding: 16.5px 91px;
-	margin: 0 0 54px 0;
-	color: $color-white;
-	font-family: $open-sans;
-	background-color: $color-lighter;
-	@include text-style(600, 18px, 25px);
-	&:hover {
-		@include main-btn-hover;
+	padding: 99px 0 50px 0;
+	//start setting for TABS
+	&__nav > input[type="radio"] {
+		display: none;
 	}
-	.tabs__button:active {
-		@include main-btn-active;
-		box-shadow: inset 0 0 10px #ab4949;
+	&__nav > div {
+		display: none;
+		border: 1px solid #c6cbcd;
+	}
+	#tab-btn-1:checked ~ #tab-1,
+	#tab-btn-2:checked ~ #tab-2,
+	#tab-btn-3:checked ~ #tab-3 {
+		display: block;
+	}
+	&__nav > label {
+		display: inline-block;
+		padding: 9.5px 82px;
+		cursor: pointer;
+		color: #333;
+		text-align: center;
+		vertical-align: middle;
+		font-family: $open-sans;
+		@include fs-lh(14px, 19px);
+		background-color: $color-white;
+		text-transform: uppercase;
+		border-radius: 5px 5px 0 0;
+		position: relative;
+		top: 1px;
+	}
+	& > label:not(:first-of-type) {
+		border-left: none;
+	}
+	&__nav > input[type="radio"]:checked + label {
+		border: 1px solid #c6cbcd;
+		border-bottom: 1px solid $color-white;
+	}
+	//end setting for TABS
+	&__cards {
+		display: flex;
+	}
+	&__body {
+		flex: 0 0 60%;
+		overflow: auto;
+		padding: 0 30px 0 100px;
+	}
+	&__title {
+		padding: 41.5px 0;
+		margin: 0 0 27px 0;
+		font-family: $open-sans;
+		@include text-style(700, 30px, 41px);
+	}
+	&__text {
+		margin: 0 0 27px 0;
+		line-height: 21px;
+	}
+	&__button {
+		display: inline-block;
+		padding: 16.5px 91px;
+		margin: 0 0 54px 0;
+		color: $color-white;
+		font-family: $open-sans;
+		background-color: $color-lighter;
+		@include text-style(600, 18px, 25px);
+		&:hover {
+			@include main-btn-hover;
+		}
+		.tabs__button:active {
+			@include main-btn-active;
+			box-shadow: inset 0 0 10px #ab4949;
+		}
+	}
+	&__image {
+		flex: 0 0 40%;
+	}
+	&__image img {
+		height: 100%;
+		max-width: 100%;
+		object-fit: cover;
 	}
 }
-.tabs__image {
-	flex: 0 0 40%;
-}
-.tabs__image img {
-	max-width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+
 @media (max-width: 1024px) {
-	.tabs__nav > label {
-		padding: 9.5px 50px;
-	}
-	.tabs__body {
-		padding: 0 25px 0 85px;
-	}
-	.tabs__title {
-		padding: 28px 0;
-		margin: 0 0 38px 0;
-		@include fs-lh(24px, 33px);
-	}
-	.tabs__text {
-		margin: 0 0 38px 0;
-		@include fs-lh(14px, 16px);
-	}
-	.tabs__button {
-		margin: 0 0 50px 0;
-		padding: 16.5px 71.5px;
-	}
-}
-@media (max-width: 992px) {
-	.tabs__body {
-		padding: 0 25px 0 40px;
-	}
-	.tabs__title {
-		margin: 0 0 30px 0;
-	}
-	.tabs__text {
-		margin: 0 0 50px 0;
-	}
-	.tabs__button {
-		margin: 0 0 30px 0;
+	.tabs {
+		&__nav > label {
+			padding: 9.5px 50px;
+		}
+		&__body {
+			padding: 0 25px 0 85px;
+		}
+		&__title {
+			padding: 28px 0;
+			margin: 0 0 38px 0;
+			@include fs-lh(24px, 33px);
+		}
+		&__text {
+			margin: 0 0 38px 0;
+			@include fs-lh(14px, 16px);
+		}
+		&__button {
+			margin: 0 0 50px 0;
+			padding: 16.5px 71.5px;
+		}
 	}
 }
 @media (max-width: 768px) {
 	.tabs {
-		margin: 0 0 30px 0;
-	}
-	.tabs__body {
-		padding: 0 25px 0 40px;
-	}
-	.tabs__title {
-		margin: 0;
-		padding: 20px 0;
-		@include fs-lh(18px, 24px);
-	}
-	.tabs__text {
-		margin: 0 0 30px 0;
-	}
-	.tabs__button {
-		margin: 0 0 20px 0;
-	}
-}
-@media (max-width: 767.98px) {
-	.tabs__nav > label {
-		padding: 9.5px 28px;
-	}
-	.tabs__body {
-		flex: 0 0 100%;
-		padding: 0 15px;
-		text-align: center;
-	}
-	.tabs__title {
-		padding: 40px 0;
-		margin: 0 0 10px 0;
-	}
-	.tabs__text {
-		margin: 0 0 29px 0;
-	}
-	.tabs__button {
-		margin: 0 0 30px 0;
-		padding: 12.5px 77.5px;
-	}
-	.tabs__image {
-		display: none;
+		padding: 41px 0 0 0;
+		&__nav > label {
+			padding: 9.5px 28px;
+		}
+		&__body {
+			flex: 0 0 100%;
+			padding: 0 15px;
+			text-align: center;
+		}
+		&__title {
+			padding: 40px 0;
+			margin: 0 0 10px 0;
+		}
+		&__text {
+			max-height: 250px;
+			overflow: scroll;
+			margin: 0 auto 29px;
+		}
+		&__button {
+			margin: 0 0 30px 0;
+			padding: 12.5px 77.5px;
+		}
+		&__image {
+			display: none;
+		}
 	}
 }
 @media (max-width: 320px) {
 	.tabs {
 		margin: 0;
-	}
-	.tabs__nav > label {
-		padding: 9.5px 27.8px;
-	}
-	.tabs__title {
-		max-width: 243px;
-		padding: 32px 0;
-		margin: 0 auto 29px;
+		&__nav > label {
+			padding: 9.5px 27.8px;
+		}
+		&__title {
+			max-width: 243px;
+			padding: 33px 0;
+			margin: 0 auto 29px;
+		}
 	}
 }

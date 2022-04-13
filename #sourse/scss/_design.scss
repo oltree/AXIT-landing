@@ -1,55 +1,46 @@
 .design {
-	margin: 0 0 50px 0;
-}
-.design__image {
+	text-align: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/banner.jpg) no-repeat center;
 	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-}
-.design__content {
-	padding: 50px 0 0 0;
-	text-align: center;
-}
-.design__block-text {
-	margin: 0 0 73px 0;
-}
-.design__link {
-	display: inline-block;
-	padding: 16.5px 141px;
-	margin: 0 0 50px 0;
-	color: $color-white;
-	font-family: $open-sans;
-	@include text-style(600, 18px, 25px);
-	border: 2px solid $color-white;
-	&:hover {
-		@include clean-btn-hover;
+	&__content {
+		padding: 50px 0;
 	}
-	&:active {
-		@include clean-btn-active;
+	&__block-text {
+		margin: 0 0 73px 0;
+	}
+	&__button {
+	}
+	&__link {
+		display: inline-block;
+		padding: 14.5px 139px;
+		color: $color-white;
+		font-family: $open-sans;
+		@include text-style(600, 18px, 25px);
+		border: 2px solid $color-white;
+		&:hover {
+			@include clean-btn-hover;
+		}
+		&:active {
+			@include clean-btn-active;
+		}
 	}
 }
 @media (max-width: 1024px) {
-	.design__block-text {
-		margin: 0 0 32px 0;
+	.design {
+		&__block-text {
+			margin: 0 0 50px 0;
+		}
 	}
 }
 @media (max-width: 768px) {
-	.design__content {
-		padding: 0;
-	}
-}
-@media (max-width: 480px) {
-	.design__image {
+	.design {
 		background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../img/banner_2.jpg) no-repeat center;
-		background-size: 100%;
-	}
-	.design__block-text {
-		margin: 0 0 50px 0;
-	}
-	.design__link {
-		margin: 0 0 60px 0;
-		padding: 10.5px 97.5px;
+		background-size: cover;
+		&__content {
+			padding: 0 0 58px 0;
+		}
+		&__link {
+			padding: 10.5px 97.5px;
+		}
 	}
 }

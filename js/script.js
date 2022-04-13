@@ -24,17 +24,7 @@ function slickify(){
 slickify();
 $(window).resize(function(){
 	var $windowWidth = $(window).width();
-	if ($windowWidth <= 768) {
+	if ($windowWidth < 768) {
 		slickify();
 	}
-});
-$('body').on('click', '.password-control', function(){
-	if ($('#password-input').attr('type') == 'password'){
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
 });
