@@ -24,7 +24,7 @@ function slickify(){
 slickify();
 $(window).resize(function(){
 	var $windowWidth = $(window).width();
-	if ($windowWidth < 768) {
+	if ($windowWidth <= 768) {
 		slickify();
 	}
 });

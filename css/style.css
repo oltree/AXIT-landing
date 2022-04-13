@@ -1429,7 +1429,7 @@ body {
   .contact__block-text {
     margin: 0 0 64px 0;
   }
-  .contact * __submit {
+  .contact__submit {
     padding: 12.5px 82.5px;
   }
 }
