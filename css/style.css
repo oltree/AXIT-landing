@@ -1211,6 +1211,7 @@ body {
   }
 
   .reviews__column {
+    padding: 0 5px;
     margin: 0 0 23px 0;
   }
 
