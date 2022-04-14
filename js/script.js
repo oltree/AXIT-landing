@@ -4,27 +4,19 @@ $(document).ready(function() {
       $('body').toggleClass('lock');
    });
 });
-function slickify(){
-   $('.reviews__columns').slick({
-      accessibility: true,
-      arrows: false,
-      infinite: true,
-      dots: true,
-      initialSlide: 1,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      responsive: [{
-         breakpoint: 768,
-         settings: 'unslick'
-      }]
-   });
-}
-slickify();
-$(window).resize(function(){
-	var $windowWidth = $(window).width();
-	if ($windowWidth <= 768) {
-		slickify();
-	}
+
+$('.reviews__columns').slick({
+   accessibility: true,
+   arrows: false,
+   infinite: true,
+   dots: true,
+   initialSlide: 1,
+   speed: 300,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   mobileFirst: true,
+   responsive: [{
+      breakpoint: 768,
+      settings: 'unslick'
+   }]
 });
