@@ -1126,8 +1126,15 @@ body {
           flex: 1 1 calc(100% / 3);
 }
 .reviews__comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 180px;
   position: relative;
-  padding: 37.5px 24px;
+  padding: 0 28px;
   margin: 0 0 66px 0;
   text-align: center;
   border-radius: 10px;
@@ -1145,6 +1152,8 @@ body {
   border-top: 20px solid #e2e2e2;
 }
 .reviews__comment-text {
+  max-height: 130px;
+  overflow: auto;
   line-height: 21px;
 }
 .reviews__user {
@@ -1182,7 +1191,6 @@ body {
     gap: 20px;
   }
   .reviews__comment:after {
-    content: "";
     left: 60px;
     border-left: 13px solid transparent;
     border-right: 13px solid transparent;
@@ -1206,32 +1214,36 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .reviews {
+    padding: 0 0 50px 0;
+  }
+  .reviews__block-text {
+    margin: 0 0 24px 0;
+  }
   .reviews__columns {
     display: block;
   }
-
   .reviews__column {
     padding: 0 5px;
     margin: 0 0 23px 0;
   }
-
   .reviews__comment {
     margin: 0 0 40px 0;
   }
-
+  .reviews__comment:after {
+    left: 40px;
+  }
   .reviews__photo {
     max-width: 57px;
     -webkit-filter: none;
             filter: none;
   }
-
   .reviews__name {
     padding: 8.5px 0;
     margin: 0 0 9px 0;
     font-size: 14px;
     line-height: 19px;
   }
-
   .reviews__position {
     font-size: 13px;
     line-height: 15px;
