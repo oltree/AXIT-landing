@@ -2,8 +2,6 @@
 	width: 100%;
 	padding: 35px 0 30px;
 	background: $color-black;
-	&__content {
-	}
 	&__icons {
 		gap: 33px;
 		margin: 0 0 28px 0;
@@ -17,21 +15,23 @@
 }
 @media (max-width: 1024px) {
 	.footer {
-	}
-	.footer__icons {
-		gap: 27px;
-		margin: 0 0 38px 0;
-	}
-	.footer__text {
-		@include fs-lh(14px, 16px);
+		&__icons {
+			gap: 27px;
+			margin: 0 0 38px 0;
+		}
+		&__text {
+			@include fs-lh(14px, 16px);
+		}
 	}
 }
 @media (max-width: 768px) {
-	.footer__icons {
-		gap: 17px;
-		margin: 0 0 27px 0;
-	}
-	.footer__text {
-		padding: 15.5px 0;
+	.footer {
+		&__icons {
+			gap: 17px;
+			margin: 0 0 27px 0;
+		}
+		&__text {
+			padding: 15.5px 0;
+		}
 	}
 }

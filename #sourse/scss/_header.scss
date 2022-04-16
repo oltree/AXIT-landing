@@ -34,14 +34,10 @@
 	&__burger {
 		display: none;
 	}
-	&__menu {
-	}
 	&__list {
 		display: flex;
 		position: relative;
 		z-index: 2;
-	}
-	&__item {
 	}
 	&__link {
 		padding: 28px;
