@@ -24,7 +24,6 @@ $(document).ready(function() {
 // Подпишемся на ресайз и продиспатчим его для запуска
 $(window).on('resize', function(e){
 	// Переменная, по которой узнаем запущен слайдер или нет
-	// Храним её в data
 	let init = $(".reviews__columns").data('init-slider');
 	// Если мобильный
 	if(window.innerWidth <= 768){
