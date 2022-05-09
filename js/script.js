@@ -25,7 +25,7 @@ $(document).ready(function() {
 $(window).on('resize', function(e){
 	// Переменная, по которой узнаем запущен слайдер или нет
 	// Храним её в data
-	var init = $(".reviews__columns").data('init-slider');
+	let init = $(".reviews__columns").data('init-slider');
 	// Если мобильный
 	if(window.innerWidth <= 768){
 		// Если слайдер не запущен
